@@ -1,6 +1,6 @@
 # tie-file
 
-A port(ish) of Tie::File, this creates an array-like object with the contents of
+A port(ish) of [Tie::File](http://search.cpan.org/perldoc?Tie::File), this creates an array-like object with the contents of
 a file on disk, where all modifications are written to the file automatically.
 
 ## Usage
@@ -14,8 +14,8 @@ var file = tieFile(filename)
 file.set(13, 'blah');      // line 13 of the file is now 'blah'
 console.log(file.get(42)); // display line 42 of the file
 
-nRecs = file.length;      // how many records are in the file?
-file.splice(nRecs - 3, 2) // chop two records off the end
+nRecs = file.length;       // how many records are in the file?
+file.splice(nRecs - 3, 2); // chop two records off the end
 
 
 // Replace javascript with JavaScript everywhere in the file
