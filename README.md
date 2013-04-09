@@ -23,8 +23,8 @@ file.forEach(function (line) {
   line.inPlace(/javascript/i, 'JavaScript')
 })
 
-# These are just like regular push, pop, unshift, shift, and splice
-# Except that they modify the file in the way you would expect
+// These are just like regular push, pop, unshift, shift, and splice
+// Except that they modify the file in the way you would expect
 
 file.push(recs...);
 var r1 = file.pop();
